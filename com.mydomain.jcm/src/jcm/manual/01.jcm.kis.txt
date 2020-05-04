@@ -1,0 +1,101 @@
+
+
+01. java keywords
+01.01. package -
+02.01. import -
+02.02. static import - 
+03.01. class
+
+.
+.
+01. java keywords
+
+copy paste ....
+
+.
+.
+01.01. package -
+ 
+- package name: backward domain name + program name -or- description topic name.
+- package name format: lower-case
+    
+-- example: package root name (a backward domain name).
+   com.domain.myJava
+   
+- package name is a subject description name or business description topic.
+
+- a package make the program code classified into different unit of code. 
+
+-- example:
+   com.domain.myJava.example1
+   
+.
+.
+02.01. import -
+
+- every program file will reuse an exit code 
+  by importing that code in to your program files
+  
+-- example: import class file name "parent" 
+   import com.domain.myJava.example1.book.parent 
+   
+-- example: import all/* class files in a package
+   import com.domain.myJava.example1.book.*
+
+.
+.
+02.02. static import - 
+
+- static import is 
+
+-- example:
+   static import org.junit.Assert.*;
+
+.
+.
+03.01. class
+
+- package name: description topic/subject name.
+- package name format: start with Capital Letter "Example".
+
+- simple program can consist of many code lines, 
+  a class make the program code classified into different unit of code.
+
+-- '{' - (open curly branch) - beginning of the definition of the class. 
+-- '}' - (closing curly branch) - define the end of the definition of the class.
+-- write the code between the open curly branch ('{') and closing curly branch ('}').
+
+-- class need to be focus in one subject.
+-!- keep your class as small as possible to improve usability and readability.
+-!- a class consist/contain of one or more method.
+
+-- example:
+   class Car {
+   }   
+
+.
+.
+04.01. method (function)
+
+- method name: description topic/subject name.
+- method name format: start with Capital Letter "Example".
+
+
+- a class consist/contain of one or more method.
+  each method archive a purpose.
+  
+-- example:
+
+   add(2,2); 
+   /// output: 4
+   
+   add("abc","c")
+   /// output: abc
+   
+   print("hello") = 
+   /// output: hello
+   
+ 
+   
+
+
