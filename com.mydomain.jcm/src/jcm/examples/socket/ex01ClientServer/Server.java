@@ -1,4 +1,8 @@
 package jcm.examples.socket.ex01ClientServer;
+/***
+ * ---[Socket Connection - Server Side]---
+ * ---[Socket Connection]---
+ */
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -11,9 +15,14 @@ public class Server {
 
 	public Server() throws IOException {
 		System.out.println("Server Side Socket");
+		
+		//socket server side
 		ServerSocket serverSocket = new ServerSocket(portNumber);
+		
+		// wait for client
 		Socket socket = serverSocket.accept();
 
+		// print when client access server
 		System.out.println("Client Connect");
 	}
 
