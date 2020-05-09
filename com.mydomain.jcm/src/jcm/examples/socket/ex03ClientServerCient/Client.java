@@ -42,7 +42,7 @@ public class Client {
 		
 ///---(/1)-------------------------------------------------///
 
-		
+		System.out.println("i !!!");
 		
 ///---(2)---[receive/read object/data from server -to- client]-----///
 
@@ -60,12 +60,11 @@ public class Client {
 		output.add("....server say: " + stUserInput);
 		
 ///---(/2)---------------------------------------------------------///
-
-		
-
 		
 		System.out.println(output);
 
+		SocketOutput socketOutput = new SocketOutput();
+		socketOutput.writeToFile("txt-client.txt", output.toString());
 	}
  
 	public static void main(String[] args) throws IOException {

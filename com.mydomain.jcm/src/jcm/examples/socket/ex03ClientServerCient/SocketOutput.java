@@ -16,10 +16,10 @@ public class SocketOutput {
 	 * filename will be default "output.txt"
 	 */
 	
-	public void writeToFile() {
+	public static void writeToFile(String stFileName, String stOutput) {
 	    try {
-		      FileWriter myWriter = new FileWriter("filename.txt");
-		      myWriter.write("Files in Java might be tricky, but it is fun enough!");
+		      FileWriter myWriter = new FileWriter(stFileName);
+		      myWriter.write(stOutput);
 		      myWriter.close();
 		      System.out.println("Successfully wrote to the file.");
 		    } catch (IOException e) {

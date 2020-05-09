@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-
+import jcm.examples.socket.ex03ClientServerCient.SocketOutput;
 
 public class Server {
 	
@@ -58,8 +58,8 @@ public class Server {
 		PrintWriter printWriter = new PrintWriter(socket.getOutputStream());
 		
 		// send data/text ("hello") from server to client
-		printWriter.println("yes its working ");
-		output.add("4. yes !");
+		printWriter.println("yes its working.");
+		output.add("4. yes its working");
 
 		// flush the stream (from server to client).
 		printWriter.flush();
@@ -68,6 +68,9 @@ public class Server {
 ///---(/2)-------------------------------------------------///
 
 		System.out.println(output);
+		
+		SocketOutput socketOutput = new SocketOutput();
+		socketOutput.writeToFile("txt-server.txt", output.toString());
 	
 	}
 
