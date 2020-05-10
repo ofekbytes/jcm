@@ -2,24 +2,43 @@ package jcm.examples.socket.ex03ClientServerCient;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class SocketOutput {
 
 	/****
-	 * TODO: add 2 argument
-	 * String stFileName
-	 * String output
-	 * 
-	 * -or-
-	 * just output
-	 * filename will be default "output.txt"
+	 * getCurrentDateAndTime() - get Current Date And Time
+	 * @return - Current Date And Time
 	 */
+	private static String getCurrentDateAndTime() {
+		String stDateAndTime = "";
+		
+		//LocalDateTime myObj = LocalDateTime.now();
+		LocalDate localDate = LocalDate.now();
+		LocalTime localTime = LocalTime.now();
+		
+		stDateAndTime = localDate.toString() 
+						+ " -- " 
+						+ localTime.toString()
+						+ "\r\n";
+		
+		return stDateAndTime;
+	}
 	
+	
+	/***
+	 * writeToFile() - write To File	
+	 * @param stFileName - file name.
+	 * @param stOutput - output String Data.
+	 */
 	public static void writeToFile(String stFileName, String stOutput) {
+		
 	    try {
-		      FileWriter myWriter = new FileWriter(stFileName);
-		      myWriter.write(stOutput);
+		      FileWriter myWriter = new FileWriter(stFileName); 
+		      myWriter.write(getCurrentDateAndTime()); // add date + time
+		      myWriter.write(stOutput); // add Data
 		      myWriter.close();
 		      System.out.println("Successfully wrote to the file.");
 		    } catch (IOException e) {
@@ -28,8 +47,16 @@ public class SocketOutput {
 		    }		
 	}
 	
-	public SocketOutput() {
-		// TODO Auto-generated constructor stub
+	
+	// constructor //
+	public SocketOutput() {	}
+
+	
+	// constructor //
+	public SocketOutput(String stFileName, String stOutput) {
+		
+		System.out.println("write a file:: " + stFileName);
+		writeToFile (stFileName, stOutput);
 	}
 
 }

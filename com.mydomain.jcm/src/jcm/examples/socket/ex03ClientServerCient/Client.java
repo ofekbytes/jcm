@@ -16,12 +16,12 @@ public class Client {
 	private String hostName = "localhost";
 	private int portNumber = 4999;
 	private ArrayList<String> output = new ArrayList<String>();
-
+	private String stFileName = "txt-client.txt";
 	
 //	private String output = "";
 	
 	public Client() throws IOException {
-		System.out.println("Client Side Socket");
+//		System.out.println("Client Side Socket");
 		
 		output.add("Client Side Socket");
 		
@@ -42,7 +42,7 @@ public class Client {
 		
 ///---(/1)-------------------------------------------------///
 
-		System.out.println("i !!!");
+//		System.out.println("i !!!");
 		
 ///---(2)---[receive/read object/data from server -to- client]-----///
 
@@ -56,15 +56,19 @@ public class Client {
 		String stUserInput = bufferedReader.readLine();
 		
 		// print user input
-		System.out.println("server say: " + stUserInput);
+//		System.out.println("server say: " + stUserInput);
 		output.add("....server say: " + stUserInput);
 		
 ///---(/2)---------------------------------------------------------///
 		
-		System.out.println(output);
+//		System.out.println(output);
 
-		SocketOutput socketOutput = new SocketOutput();
-		socketOutput.writeToFile("txt-client.txt", output.toString());
+		// 1 // write to file.
+//		SocketOutput socketOutput = new SocketOutput();
+//		socketOutput.writeToFile("txt-client.txt", output.toString());
+		
+		// 2 // write to file.
+		SocketOutput socketOutput = new SocketOutput(stFileName, output.toString());
 	}
  
 	public static void main(String[] args) throws IOException {

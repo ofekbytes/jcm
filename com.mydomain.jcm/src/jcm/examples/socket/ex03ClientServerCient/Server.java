@@ -10,19 +10,19 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-import jcm.examples.socket.ex03ClientServerCient.SocketOutput;
 
 public class Server {
 	
-	private String hostName = "localhost";
 	private int portNumber = 4999;
-
 	private ArrayList<String> output = new ArrayList<String>();
+	private String stFileName = "txt-server.txt";
 	
-	
-	
+	/***
+	 * 
+	 * @throws IOException
+	 */
 	public Server() throws IOException {
-		System.out.println("Server Side Socket");
+//		System.out.println("Server Side Socket");
 		output.add("1. Server Side Socket");
 		//socket server side
 		ServerSocket serverSocket = new ServerSocket(portNumber);
@@ -31,7 +31,7 @@ public class Server {
 		Socket socket = serverSocket.accept();
 
 		// print when client access server
-		System.out.println("Client Connect");
+//		System.out.println("Client Connect");
 		output.add("2. Client Connect.");
 ///---(1)---[receive/read object/data from client -to- server]-----///
 		
@@ -45,7 +45,7 @@ public class Server {
 		String stUserInput = bufferedReader.readLine();
 		
 		// print user input
-		System.out.println("user say: " + stUserInput);
+//		System.out.println("user say: " + stUserInput);
 		output.add("3. user say: " + stUserInput);
 		
 ///---(/1)---------------------------------------------------------///
@@ -67,13 +67,19 @@ public class Server {
 		
 ///---(/2)-------------------------------------------------///
 
-		System.out.println(output);
+//		System.out.println(output);
 		
-		SocketOutput socketOutput = new SocketOutput();
-		socketOutput.writeToFile("txt-server.txt", output.toString());
-	
+//		SocketOutput socketOutput = new SocketOutput();
+//		socketOutput.writeToFile(stFileName, output.toString());
+		
+		SocketOutput socketOutput = new SocketOutput(stFileName, output.toString());
 	}
 
+	/****
+	 * 
+	 * @param args
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws IOException  {
 
 		Server server = new Server();

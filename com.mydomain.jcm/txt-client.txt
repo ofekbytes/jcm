@@ -1,1 +1,2 @@
+2020-05-10 -- 16:47:08.235066
 [Client Side Socket, ....is it working ?, ....server say: yes its working.]
