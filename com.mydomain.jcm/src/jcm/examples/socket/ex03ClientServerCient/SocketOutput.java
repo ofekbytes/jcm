@@ -60,3 +60,11 @@ public class SocketOutput {
 	}
 
 }
+
+
+/***
+ * note: 
+ * code path: /home/jron/git-ofekbytes/jcm/com.mydomain.jcm/src/jcm/examples/socket/ex03ClientServerCient/SocketOutput.java
+ * file path: /home/jron/git-ofekbytes/jcm/com.mydomain.jcm/txt-client.txt 
+ */
+
