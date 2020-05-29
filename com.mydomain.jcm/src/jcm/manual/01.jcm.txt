@@ -7,6 +7,7 @@
 03.01. class
 04.01. method
 
+
 .
 .
 01. java keywords
@@ -35,7 +36,7 @@
 .
 01.01. package -
  
-  package structure - organize different files in your program.
+  package structure - is a file structure that organize different files in your program.
   top package structure (root) is usually a backward domain name.
   
 -- example
@@ -44,7 +45,8 @@
   a name of the program file is a combination of the program name 
   and full package structure of the package is reside in.
 
--!- declare package name with lower case.
+- package name format: lower-case
+  ( declare package name with lower case ).
 
 - package name is a subject description name or business description topic.
 
@@ -54,9 +56,11 @@
 
 - Summary: 
 
-- package name: backward domain name + program name -or- description topic name.
-- package name format: lower-case
+- package name: 
+-- backward domain name + program name -or- description topic name.
+-- package name can be a subject description name -or- business description topic.
 
+- package name format: lower-case
 .
 .
 02.01. import -
@@ -104,20 +108,25 @@
   improve cooperation between business client and programmers.
   the client say what he wants the program to do and the programmer will express it in code.
 
+- create a class:
 -- class name will start with Capital Letter "Example".
--- open curly branch '{' -  define the beginning of the definition of the class 
--- closing curly branch '}' -  define the end of the definition of the class
--- write the code between the open curly branch and closing curly branch.
+-- '{' - open curly branch -  define the beginning of the definition of the class 
+-- '}' - closing curly branch -  define the end of the definition of the class
+-- '{ code; }' - write the code between the '{' -(open curly branch) -and- '}' -(closing curly branch).
 
 -- class need to be focus in one subject.
 -!- keep your class as small as possible to improve usability and readability.
 -!- a class consist/contain of one or more method.
 
 -- example:
-   class Car {
+   class Car { 
    }   
 
 
+- Summary: 
+
+- package name: description topic/subject name.
+- package name format: start with Capital Letter "Example".
 .
 .
 04.01. method (function)
@@ -142,16 +151,16 @@
    
 - programming idea is like a book idea 
 -- a book have a chapter.
-   a chapter have a paragraph.
-   a paragraph have a sentences.
+-- a chapter have a paragraph.
+-- a paragraph have a sentences.
 
 -- chapter - java package name.
-   paragraph - java class .
-   sentences - java method.
+-- paragraph - java class .
+-- sentences - java method.
 
 - method can call other method, 
   it will create (forms) an of hierarchy method  (Chaining of methods) 
-  calling each other
+  calling each other.
   
 - as a programmer you need to decide how you want to structure your code, method length, 
   which method will use which sub method.
@@ -161,7 +170,7 @@
 -!- making instruction/comment inside a programming code is important
   
 
--- example: 
+-- example: method hierarchy
    
    MakeDinner() {
    
@@ -193,6 +202,11 @@
    }
 
 
+--- example: method
+	<jcm.examples.basic.food.*>
+	<jcm.examples.basic.food.MakeDinner.java>
+	
+	
 -!- mixing level of abstraction mean calling sub method without using main method
 	calling MakeRice() -and- MakeSchnitzel() without using MakeMainCourse() method.
 	
@@ -201,8 +215,80 @@
       MakeSchnitzel();
    } 
 
+- method size: 1-3 lines.
+- method maximum size: 20 lines.
+
+- create a method:
+-- method name will start with Capital Letter "Example".
+-- method parameters (input fields) declared inside brackets, 
+   between '(' - open brackets -and- ')' - closing brackets.
+   we can declared many method parameters (input fields) between 0-N (a lot of fields). 
    
-   
-   
-   
-   
+-- '{' - open curly branch -  define the beginning of the definition of the method 
+-- '}' - closing curly branch -  define the end of the definition of the method
+-- '{ code; }' - write the code between the '{' -(open curly branch) -and- '}' -(closing curly branch).
+
+-- method parameters - a method parameters is a variable/s inside method definition.
+-- method parameters size: 1-3 parameters.
+
+-- method arguments - when calling a method with input values, 
+                      we are calling a method with method arguments.
+
+--- example: method parameters -and- method arguments. 
+
+   // method with parameter/s //
+	public int addMethod(int methodParameterOne, int methodParameterTwo) {
+		return methodParameterOne + methodParameterTwo;
+	}
+
+	public static void main(String[] args) {
+
+		int methodArgumentOne = 3;
+		int methodArgumentTwo = 7;
+
+		// calling method with argument //
+		Ex_04_02_methodParameterArgument c = new Ex_04_02_methodParameterArgument();
+		System.out.println(c.addMethod(methodArgumentOne, methodArgumentTwo));
+
+--- example: method parameters -and- method arguments.
+	<Ex_04_01_class_method>
+    <Ex_04_02_methodParameterArgument>
+.
+.
+04.01. variable (storage)
+
+- variable -  a variable is a value placeholder that can be set.
+-- variable value can be changed while the program is running.
+-- variable can be used as input -or- output value of method/s.
+-- variable can be declared/set in diffrent data type/s like number, text, etc..
+
+--- example: variable/s name/s
+	myOldCar
+	myNewCar
+	myWorkCar;
+
+- variable types: //// TODO ////
+-- instance variable 
+-- static variable
+-- local variable
+-- parameters
+-- argument
+
+- access modifier
+-- public - public access modifier define any class from any package may use this class or method for public access modifier. 
+-- private - private access modifier //// TODO ////
+-- default - default access modifier //// TODO //// 
+-- protected - protected access modifier //// TODO ////
+
+- variable data types:
+  //// TODO ////
+  
+  
+  --- example: 
+  
+  
+  //// TODO //// set variable return value inside method ???
+  //// TODO //// or use variable section to do so ?
+  
+
+
