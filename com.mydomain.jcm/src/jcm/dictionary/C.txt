@@ -1,0 +1,42 @@
+
+
+---[C]----
+
+
+---[camelCase]----
+ 
+-- if class name -or- method name -or- variable name, 
+   consist/contain more than one word, we will use upperCase to indicate a beginning of a new word.
+
+--- example: Class camelCase:
+    ClassName
+    
+--- example: method camelCase:
+    methodName
+
+--- example: variable camelCase:
+    variableExample
+    
+--- rtfm:
+	https://en.wikipedia.org/wiki/Camel_case
+
+----------------------------
+
+---[camel_hump]----
+
+ - if class name -or- method name -or- variable name, 
+   consist/contain more than one word, we will use underscore to indicate a beginning of a new word.
+   
+--- example: variable camel_hump:
+    camel_hump_variable
+
+--- rtfm:
+	https://en.wikipedia.org/wiki/Camel_case
+    
+----------------------------
+    
+---[]----    
+    
+    
+    
+    

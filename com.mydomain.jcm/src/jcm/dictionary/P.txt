@@ -1,0 +1,30 @@
+
+
+---[P]----
+
+
+---[PascalCase]---- 
+
+-- camelCase variable name start with lowerCase and any other new word 
+   in this variable name start with UpperCase.
+
+-- PascalCase is similar to camelCase, but First word is also UpperCase.
+
+--- example: PascalCase
+	PascalCase
+	
+--- example: upperCase
+	upperCase
+	
+--- rtfm:
+	https://en.wikipedia.org/wiki/Camel_case
+	
+----------------------------
+	
+
+	
+
+	
+	
+	
+	

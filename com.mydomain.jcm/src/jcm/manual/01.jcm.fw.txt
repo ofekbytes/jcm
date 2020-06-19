@@ -91,18 +91,13 @@ copy paste ....
 
 - method name format: lower case
 --- example:
-    "example();".
+    "example".
 
 - a class consist/contain of one or more method.
 -- a method archive a purpose.
- 
-- create a method:
--- method name: lower case letter 
---- example: 
-    "methodExample".
-    
+     
 -- method parameters - a method parameters is a variable/s inside method definition.
--- method parameters size: 1-3 parameters.
+-- method parameters size: 1-3 parameters per method.
    
 -- '{' - beginning of the method 
 -- '}' - closing of the method

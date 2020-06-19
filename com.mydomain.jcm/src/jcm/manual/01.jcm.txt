@@ -109,7 +109,7 @@
   the client say what he wants the program to do and the programmer will express it in code.
 
 - create a class:
--- class name will start with lower case Letter "Example".
+-- class name will start with Capital Letter "Example".
 -- '{' - open curly branch -  define the beginning of the definition of the class 
 -- '}' - closing curly branch -  define the end of the definition of the class
 -- '{ code; }' - write the code between the '{' -(open curly branch) -and- '}' -(closing curly branch).
@@ -229,7 +229,7 @@
 -- '{ code; }' - write the code between the '{' -(open curly branch) -and- '}' -(closing curly branch).
 
 -- method parameters - a method parameters is a variable/s inside method definition.
--- method parameters size: 1-3 parameters.
+-- method parameters size: 1-3 parameters per method.
 
 -- method arguments - when calling a method with input values, 
                       we are calling a method with method arguments.
@@ -262,6 +262,9 @@
 -- variable value can be changed while the program is running.
 -- variable can be used as input -or- output value of method/s.
 -- variable can be declared/set in different data type/s like number, text, etc..
+-- variable Names can contain letters, digits, underscores, and dollar signs
+-- variable Names must begin with a letter
+-- variable Names start with a lower case letter "variableExample"
 
 --- example: variable/s name/s
 	myOldCar
@@ -275,6 +278,9 @@
 -- local variable
 -- parameters
 -- argument
+
+
+
 
 
 - access modifier
@@ -304,21 +310,20 @@
 
 
 - method return value type:
--- void - no value return.
+-- void - no value return (return no value).
 -- int - //// TODO ////
 ..
 ..
 
 
 - method rules:
--- Queries methods - return a value but don't alter the state.
--- commands methods - alter the state but not return a value.
+-- Queries methods - (getter) - return a value but don't alter the state.
+-- commands methods - (setter) - alter the state but don't return a value.
 
 
---- example: command method - no value return.
+--- example: makeCake() method is a "command method" and return no value (void).
 
-	public class Cake {
-
+	public class Cake {		
 		public void makeCake() {
 			System.out.println("MakeCake");
 		}
@@ -326,17 +331,125 @@
 
   
 //// TODO ////
-  
-06.01. AT symbol - '@' symbol -  annotation 
--the AT symbol <'@'> - indicate annotation.
 
-@Test - is annotation '@' indicate that a given method will be used as a test.
+.
+.
+06.01.  annotation symbol -or- @ symbol -or- AT symbol . 
+
+- The AT symbol '@' symbol indicate annotation. 
+
+- Using the @ symbol (annotation symbol) to declare/describe the method purpose.
+--- example: @Test annotation indicate that a given method will be used as a test.
 
 --- example: @Test
 
- @Test
+	public class Cake {
+		@Test		
+		public void makeCake() {
+			System.out.println("MakeCake");
+		}
+	}
+
+- Annotation Symbol list
+	@Deprecated
+	@Documented
+	@FunctionalInterface
+	@Inherited
+	@Native
+	@Override
+	@Repeatable
+	@Retention
+	@SafeVarargs
+	@SuppressWarnings
+	@Target
+
+	
+//---[Unsorted Data]----
+.
+.
+- camelCase - 
+-- if class name -or- method name -or- variable name, 
+   consist/contain more than one word, we will use upperCase to indicate a beginning of a new word.
+
+--- example: Class camelCase:
+    ClassName
+    
+--- example: method camelCase:
+    methodName
+
+--- example: variable camelCase:
+    variableExample
+
+    
+//---[Unsorted Data]----
+.
+.  
+- camel_hump - 
+-- if class name -or- method name -or- variable name, 
+   consist/contain more than one word, we will use underscore to indicate a beginning of a new word.
+   
+--- example: variable camel_hump:
+    camel_hump_variable
+    
+    
+ //---[Unsorted Data]----
+.
+.
+- dot '.' - 
+
+-- dot in a variable 'eat' and the method 'lunch' indicate execute call method lunch on eat
+
+--- example: dot between a variable 'eat' and the method 'lunch' indicate: 
+             "execute method "lunch()" from "eat" variable.
+ 
+    eat.lunch();
+    
+//---[Unsorted Data]----
+.
+.	
+- colon ';' -	
+-- indicate end statement in java.
+
+--- example: 
+    eat.lunch();	
+	
+--- example: class 'Car'
+
+	public class Car {	
+		@Test  
+		public void speed(int speed) {
+			System.out.println("Car Speed is: " + speed);		
+		}	
+	}
 
 
+   
+//---[Unsorted Data]----
+.
+.
+- Class -
 
-- symble
+-- a class is a ways of structuring coded in java, a unit of code.
+-- a class is like a template, like a definition for what the class would do for you letter on. 
+   when the program is running the class "car" (for example) define the behaviour of a "car".  
 
+-- when the program is running we see on run time that there will be a number of cars.
+   each car may have a unique set of values.
+   one car will have no oil so the value of oil equal to zero when the program is running.
+
+-- a class is like an animal DNA that have the definition of the animal needed to be created when the program is running.
+ 
+
+-- Object
+
+-- when a java program is running is create a certain number of object that exist as set of values in the computer memory.
+   those value may change while the program is running.
+
+
+- Object Oriented language - 
+-- java is an object oriented language everything is focused around object.
+-- java writing classes is a way of defining a model, which focuses on necessary aspect to solve a specific problem.
+-- 
+	
+	
+	
