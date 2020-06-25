@@ -439,17 +439,117 @@
 
 -- a class is like an animal DNA that have the definition of the animal needed to be created when the program is running.
  
-
--- Object
+.
+.
+- Object
 
 -- when a java program is running is create a certain number of object that exist as set of values in the computer memory.
    those value may change while the program is running.
 
-
+.
+.
 - Object Oriented language - 
+
 -- java is an object oriented language everything is focused around object.
+
 -- java writing classes is a way of defining a model, which focuses on necessary aspect to solve a specific problem.
--- 
+
+-- a programmer need to fully understand a problem and get a model out of it and transfer this model into class.
+
+-- when a programmer write a program that is more accurate, 
+--- less code need to be written and maintained, 
+--- less error the program will have 
+--- the program will run faster.
+
+-- the power of java is to be able define and execute table model like a virtual machine on your computer with a names from the real world.
+
+-- example: object oriented language 
+
+   // class:
+
+   class Car(age, maxSpeed)
+   
+   
+   /// objects:
+   
+   Car car = new Car();
+   car.speed(120);
 	
+   Car secondCar = new Car();
+   secondCar.speed(100);
 	
+   Car thirdCar = new Car();
+   thirdCar.speed(140);
+
+.
+.
+- constructor
+
+-- class and object that will be created from that classes.
+-- a method create an object from us, a constructor is special method it is called on a class and it will create an object every time we call this method. 
+
+-- when the object created/exist we cannot call this method anymore.
+
+-- a constructor construct object from class files.
+
+--- example: 
+    create a new object of Car() class;
+    a constructor in this case, just like a method give a number value.
+    
+    = new Car(120); 
+
+
+--  when the program is running and execute this line a new object will be created in the computer memory.
+    Car testCar = new Car(120);
+    
+--- example:
+
+    public class Car {
+       public Car(int speed) { System.out.println("speed: " + speed ); }
+    }
+
+    Car testCar = new Car(120);
+
+
+.
+.
+- variable declaration
+
+-- define a variable before using it.
+    
+-- variable declaration - declare a variable myCar of the type Car.
+   Car myCar;
 	
+-- object allocation - the variable is declare and needed to be allocated to the object we created.
+	
+-- variable declaration + object creation + allocation in a single line ;
+    Car myCar = new Car(120);
+	
+-- when the program is running this line read like that
+--- create an object type Car with speed value argument.
+    new Car(120);
+    
+--- create a variable of type Car and give it a name 'myCar'
+    Car myCar
+    
+--- assign Car object to the variable name myCar.
+    Car myCar = new Car(120);
+
+--- when using myCar variable, we reference the object created in memory	
+
+-!- we have a value into a constructor of car, without looking inside code of the Class Car we will not know what is the meaning of the value. (value = 120).
+    Car myCar = new Car(120);
+
+-!- limit the number of variable used inside a method .
+    120 means the speed of the car.
+
+-!- the less variable inside a method the better.
+
+
+
+
+
+    
+    
+	 
+	 
