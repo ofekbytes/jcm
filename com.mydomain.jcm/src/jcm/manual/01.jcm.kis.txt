@@ -77,7 +77,7 @@ copy paste ....
 04.01. method (function)
 
 - method name: a method description topic/subject name.
-- method name format: start with lower case Letter "Example".
+- method name format: start with lower case Letter "methodExample".
 
 
 - a class consist/contain of one or more method.
