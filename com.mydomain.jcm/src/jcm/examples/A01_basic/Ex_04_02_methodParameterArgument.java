@@ -1,4 +1,4 @@
-package jcm.examples.basic;
+package jcm.examples.A01_basic;
 
 public class Ex_04_02_methodParameterArgument {
 	

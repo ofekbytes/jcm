@@ -1,4 +1,0 @@
-/**
- * 
- */
-package jcm.examples.basic;

@@ -1,4 +1,4 @@
-package jcm.examples.basic;
+package jcm.examples.A01_basic;
 
 import jcm.examples.Test;
 

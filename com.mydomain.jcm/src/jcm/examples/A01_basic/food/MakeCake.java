@@ -1,4 +1,4 @@
-package jcm.examples.basic.food;
+package jcm.examples.A01_basic.food;
 
 public class MakeCake {
 
