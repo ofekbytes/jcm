@@ -1,4 +1,4 @@
-package jcm.examples.A01_basic;
+package jcm.examples.a01_basic;
 
 public class Ex_04_02_methodParameterArgument {
 	
@@ -16,7 +16,7 @@ public class Ex_04_02_methodParameterArgument {
 		Ex_04_02_methodParameterArgument c = new Ex_04_02_methodParameterArgument();
 		
 		//  calling method with argument: methodArgumentOne, methodArgumentTwo  //
-		System.out.println(c.addMethod(methodArgumentOne, methodArgumentTwo));
+		System.out.println(methodArgumentOne + "+" + methodArgumentTwo + "= " +  c.addMethod(methodArgumentOne, methodArgumentTwo));
 	}
 
 }

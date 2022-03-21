@@ -1,4 +1,4 @@
-package jcm.examples.A01_basic.food;
+package jcm.examples.a01_basic.food;
 
 public class MakeRice {
 

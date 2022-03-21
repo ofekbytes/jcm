@@ -1,11 +1,8 @@
-package jcm.examples.A01_basic.food;
+package jcm.examples.a01_basic.food;
 
 public class MakeDinner {
 
 	public MakeDinner() {
-	}
-
-	public static void main(String[] args) {
 		System.out.println("::MakeDinner::");
 		
 		// call Main Method
@@ -17,6 +14,11 @@ public class MakeDinner {
 		MakeRice makeRice = new MakeRice();
 		MakeSchnitzel makeSchnitzel = new MakeSchnitzel();
 
+	}
+
+	public static void main(String[] args) {
+		System.out.println("*****");
+		new MakeDinner(); 
 	}
 
 }

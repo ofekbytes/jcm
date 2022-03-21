@@ -215,7 +215,11 @@
 --- example: method
 	<jcm.examples.basic.food.*>
 	<jcm.examples.basic.food.MakeDinner.java>
+	<jcm.examples.basic.food.MakeMainCourse.java>
 	
+	MakeAppetizer
+	MakeDessert
+	MakeMashedPotatoes
 	
 -!- mixing level of abstraction mean calling sub method without using main method
 	calling MakeRice() -and- MakeSchnitzel() without using MakeMainCourse() method.
@@ -277,19 +281,22 @@
 -- variable Names start with a lower case letter "variableExample"
 
 --- example: variable/s name/s
-	myOldCar
-	myNewCar
-	myWorkCar
+	myOldPc
+	myNewPc
+	myWorkPc
 
 
-//// TODO ////
+----[TODO]------------
+
 - variable data types: 
 -- instance variable 
 -- static variable
 -- local variable
 -- parameters
 -- argument
-
+-- primitive variable
+-- Object, array, ...
+------------------------
 .
 .
 - access modifier

@@ -6,6 +6,7 @@
 02.02. static import - 
 03.01. class
 04.01. method
+05.01. variable (storage) and method
 
 .
 .
@@ -84,6 +85,7 @@ copy paste ....
 
 - method name: 
 -- a method description topic/subject name.
+
 --- example:
 	add(2,2);
 	add("abc","c")
@@ -98,6 +100,7 @@ copy paste ....
      
 -- method parameters - a method parameters is a variable/s inside method definition.
 -- method parameters size: 3-5 parameters per method.
+-- method can call other method (method calling each other).
    
 -- '{' - beginning of the method 
 -- '}' - closing of the method
@@ -109,5 +112,29 @@ copy paste ....
 --- example: method parameters -and- method arguments.
 	<Ex_04_01_class_method>
     <Ex_04_02_methodParameterArgument>
+.
+.
+05.01. variable (storage) and method
+    
+- variable - 
+-- variable can set data, get data with method. (data type: number, text,...)  
+-- variable Names start with a lower case letter (example: "variableExample").
+
+
+--- example: variable/s name/s
+	myOldPc
+	myNewPc
+	myWorkPc
+.
+.
+- access modifier
+
+
+
+
+
+
+    
+    
     
     

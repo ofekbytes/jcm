@@ -1,6 +1,6 @@
-package jcm.examples.A01_basic;
+package jcm.examples.a01_basic;
 
-import jcm.examples.A01_basic.Ex_04_01_class_method;
+import jcm.examples.a01_basic.Ex_04_01_class_method;
 
 public class Ex_02_01_import {
 

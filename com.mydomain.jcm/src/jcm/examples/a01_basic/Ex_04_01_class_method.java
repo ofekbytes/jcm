@@ -1,4 +1,4 @@
-package jcm.examples.A01_basic;
+package jcm.examples.a01_basic;
 
 public class Ex_04_01_class_method {
 	
