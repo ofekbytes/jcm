@@ -59,7 +59,7 @@ copy paste ....
 - package name: 
 -- description topic/subject name.
 
-- package name format: Capital Letter (start with Capital Letter)
+- class name format: Capital Letter (start with Capital Letter)
 --- example: 
     "Example".
     
