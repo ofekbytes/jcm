@@ -1,0 +1,48 @@
+
+
+----[Class]------------
+.
+.
+- Description
+
+-- simple program can consist of many code lines, 
+   a Class make the program code classified into different unit of code (categories).
+
+-- A class is a template used to create objects and to define object data types.
+
+-- A Class is like an "object constructor" or a "blueprint" for creating objects.
+.
+.
+- Rules of "class":
+-- class need to be focus in one subject.
+-- keep your class as small as possible to improve usability and readability.
+-- a class consist/contain of one or more method.
+.
+.
+- Rules of "class name":
+-- description "Topic" or "Subject" name.
+.
+.
+- class name format: Capital Letter 
+-- Capital Letter (start with Capital Letter)
+-- example: Car {}
+
+      public class Car { 
+      }
+.
+.
+- create a class:
+-- class className - Capital Letter.
+-- '{' - beginning of the class 
+-- '}' - end of the class
+-- '{ code; }' - write the code between them.
+.
+.
+- Examples:
+
+      public class Car {
+         // code; 
+      }
+.
+.
+--------------------------------

@@ -1,0 +1,24 @@
+
+
+----[import]------------
+.
+.
+- Description
+
+-- every program file will reuse an exit code by importing that code in to your program files.
+.
+.
+- Rules of "import":
+-1- import ONE or ALL class from the package.
+.
+.
+- Examples:
+
+-1- imports only the "myBook" class from the package.  
+       import com.domain.myJava.example1.book.myBook
+
+-2- imports all classes from the "com.domain.myJava.example1.book" package.
+       import com.domain.myJava.example1.book.*
+.
+.
+--------------------------------

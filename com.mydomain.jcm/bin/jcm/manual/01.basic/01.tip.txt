@@ -1,0 +1,3 @@
+jcm  -->  java coffee maker
+jcm.fw  -->  java coffee maker -- fast work
+jcm.kis  -->  java coffee maker -- keep it simple

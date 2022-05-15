@@ -1,0 +1,17 @@
+
+
+----[project]------------
+.
+.
+- Description
+--
+.
+.
+- Rules of "project name":
+-- 
+.
+.
+- Examples:
+.
+.
+--------------------------------

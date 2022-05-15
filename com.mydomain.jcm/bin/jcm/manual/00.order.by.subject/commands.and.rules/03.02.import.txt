@@ -1,0 +1,26 @@
+
+
+----[import static]------------
+.
+.
+- Description
+
+-- every program file will reuse an exit code 
+   by importing that code in to your program files
+.
+.
+- Rules of "import static":
+
+.
+.
+- Examples:
+
+-1- 
+       import static com.domain.myJava.example1.book.myBook;
+       import jcm.examples.b02_BasicJavaKeywords.test.b02Test;
+
+-2- 
+       import static com.domain.myJava.example1.book.*;
+.
+.
+--------------------------------

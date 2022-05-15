@@ -1,0 +1,39 @@
+
+
+----[package]------------
+.
+.
+- Description
+
+-- A Java package organizes Java classes into namespaces.
+   A java package is a group of similar types of classes, interfaces, sub-packages. 
+   There is two types of Packages in java:
+   -1- built-in package (java, lang, awt, javax, swing, net, io, util, sql etc.)
+   -2- user-defined package.
+
+-- A package make the program code classified into different unit of code.
+
+-!- package per "Subjects" or "Business Topic")
+.
+.
+- Rules of "package name"
+-1- A backward domain name + program name. 
+-2- A description topic name.
+.
+.
+- Rules of "package format": lower-case.
+-- example:
+      package com.domain.myJava;
+.
+.
+- Examples:
+
+-1- A backward domain name + program name 
+       package com.domain.myJava;
+       
+-2- A description topic name
+	   package learn.js;
+	   package fix.cars;
+.
+.
+--------------------------------
